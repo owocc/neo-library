@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --header-height: 3.5rem;
+}
+/* 基本样式 */
+@layer base {
+  body {
+    @apply text-base transition-colors duration-400 bg-base-body;
+  }
+  h1,
+  h2,
+  h3,
+  h4 {
+    @apply text-base-title font-medium;
+  }
+}
+
