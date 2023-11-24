@@ -1,11 +1,13 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   modules: [
-    "@sidebase/nuxt-auth",
-    "@nuxtjs/tailwindcss",
+    // "@sidebase/nuxt-auth",
     "@bg-dev/nuxt-naiveui",
     "nuxt-icon",
-    'nuxt-swiper'
+    "nuxt-swiper",
+    "@nuxtjs/tailwindcss",
+    "@vueuse/nuxt",
+    "@nuxtjs/device",
   ],
   build: {
     transpile: ["trpc-nuxt"],

@@ -2,6 +2,11 @@
   <ClientActionSearch />
   <ClientActionLogin />
   <main>
-    <ClientHomeSection01 />
+    <ClientSectionHome />
+    <ClientSectionServices />
+    <ClientSectionFeatured />
+    <ClientSectionDiscount />
+    <ClientSectionNewBooks />
+    <!-- <ClientSectionJoin /> -->
   </main>
 </template>

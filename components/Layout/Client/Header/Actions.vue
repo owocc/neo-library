@@ -14,7 +14,7 @@ const ActionList = [
 
 <template>
   <!-- 操作按钮 -->
-  <div class="flex items-center gap-x-4">
+  <div class="flex items-center gap-x-4 text-xl">
     <!-- 操作 -->
     <Icon
       :name="action.icon"
