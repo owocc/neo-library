@@ -6,7 +6,7 @@
           <div class="mb-4">
             <CommonLogo />
           </div>
-          <div>网站描述网站描述网站描述网站描述网站描述网站描述网站描述</div>
+          <div class="max-w-sm">任何人都可以访问和请求API的公共图书馆</div>
         </div>
         <!-- footer data -->
         <div
@@ -55,7 +55,7 @@
         </div>
         <span>
           <!-- 一则隐私政策 -->
-          © 2023 by 星光 . All rights reserved.
+          © 2023 by Neo Library
         </span>
       </div>
     </div>

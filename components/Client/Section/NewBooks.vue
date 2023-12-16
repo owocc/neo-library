@@ -1,6 +1,6 @@
 <template>
   <section class="pt-16 lg:pt-32">
-    <h2 class="text-center text-4xl mb-4 lg:mb-16">New Books</h2>
+    <h2 class="text-center text-4xl mb-4 lg:mb-16">书籍评分</h2>
     <div class="px-6 max-w-6xl mx-auto">
       <Swiper
         v-for="n in 2"
@@ -20,10 +20,9 @@
           >
             <img src="/img/book-1.png" alt="" class="w-[100px]" />
             <div>
-              <h2 class="text-xl mb-2">New Book</h2>
+              <h2 class="text-xl mb-2">书籍名称</h2>
               <div class="flex items-center gap-x-3 mb-3">
-                <span class="text-base-title">$7.99</span>
-                <span class="text-sm line-through">$14.99</span>
+                <span class="text-base-title">书籍简介</span>
               </div>
 
               <div class="text-primary">

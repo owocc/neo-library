@@ -1,4 +1,11 @@
-<script setup></script>
+<script setup>
+const images = [
+  "/img/home-book-1.png",
+  "/img/home-book-2.png",
+  "/img/home-book-3.png",
+  "/img/home-book-4.png",
+];
+</script>
 <template>
   <section class="lg:py-32">
     <div
@@ -6,16 +13,14 @@
     >
       <div class="text-center lg:text-left max-w-md mx-auto">
         <h1 class="text-4xl mb-4">
-          Browse & <br />
-          Select E-Books
+          公共,任何人都可以访问的 <br />
+          图书API
         </h1>
         <p class="mb-8">
-          Find the best e-books from your favorite writers, explore hundreds of
-          books with all possible categories, take advantage of the 50% discount
-          and much more.
+          使用公共的API，您可以轻松地将图书信息集成到您的应用程序中。
         </p>
         <a class="inline-block bg-primary text-white font-semibold py-4 px-12"
-          >Explore Now</a
+          >查看接口列表</a
         >
       </div>
 
@@ -25,7 +30,7 @@
           <!-- swiper item -->
           <Swiper
             :modules="[SwiperAutoplay]"
-            class="w-full max-w-xl lg:max-w-3xl"
+            class="!w-full !max-w-xl !lg:max-w-3xl"
             slidesPerView="auto"
             :spaceBetween="-24"
             centeredSlides
@@ -40,9 +45,10 @@
               },
             }"
           >
+            <!-- w-[220px] lg:w-[280px] -->
             <SwiperSlide
-              class="w-[220px] lg:w-[280px]"
-              v-for="item in 5"
+              class="w-full lg:w-[280px]"
+              v-for="item in images"
               v-slot="{ isActive }"
             >
               <article
@@ -50,7 +56,7 @@
                 :class="{ 'scale-80': !isActive }"
               >
                 <img
-                  src="/img/home-book-1.png"
+                  :src="item"
                   alt=""
                   class="w-full transition-transform duration-400"
                 />
